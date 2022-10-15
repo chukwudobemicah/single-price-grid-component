@@ -1,0 +1,122 @@
+/* RESETS */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* GENERAL STYLES */
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #fff;
+  font-size: 16px;
+  background-color: hsl(204, 43%, 93%);
+}
+main {
+  /* height: 550px; */
+  width: 80%;
+  margin: 55px auto;
+  display: grid;
+  grid-template-rows: 1.2fr 1fr 1fr;
+  /* border: 2px solid #000; */
+  box-shadow: 0px 15px 11px rgba(51, 51, 51, 0.203);
+}
+div {
+  padding: 20px;
+  color: #ddd;
+}
+span {
+  display: block;
+  margin-bottom: 20px;
+}
+li {
+  list-style-type: none;
+}
+/* DETAILED STYLES */
+.community {
+  background-color: #fff;
+  color: rgb(126, 125, 125);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  line-height: 22px;
+}
+.subscription {
+  background-color: rgb(51, 163, 143);
+}
+.us {
+  background-color: rgb(52, 196, 165);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: inset 0px 0px 25px 25px rgba(84, 84, 84, 0.077);
+  line-height: 20px;
+}
+button {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  background-color: greenyellow;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  color: rgb(244, 255, 92);
+  box-shadow: 0px 15px 11px rgba(51, 51, 51, 0.203);
+}
+.community span {
+  color: green;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.community .thirty {
+  color: greenyellow;
+}
+.tweenty-nine {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: bold;
+  display: inline;
+  margin-bottom: 0;
+}
+/* .subscription :nth-child(1) {
+  font-size: 1.8rem;
+} */
+/* .us {
+  font-size: 1.1rem;
+} */
+.tweenty-nine-container {
+  padding: 0;
+  color: rgba(233, 231, 231, 0.584);
+}
+.why {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 550;
+}
+.monthly {
+  color: #fff;
+  font-size: 1.2rem;
+}
+button:is(:hover, :active) {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in;
+}
+@media screen and (min-width: 1200px) {
+  main {
+    width: 600px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 120px auto;
+  }
+  .community {
+    grid-column: span 4;
+  }
+  .us {
+    grid-column: span 2;
+    border-bottom-left-radius: 0;
+  }
+  .subscription {
+    grid-column: span 2;
+    border-bottom-left-radius: 5px;
+  }
+}
